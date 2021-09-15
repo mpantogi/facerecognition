@@ -12,7 +12,7 @@ import './App.css';
 
 //You must add your own API key here from Clarifai.
 const app = new Clarifai.App({
- apiKey: 'PUT YOUR API KEY'
+ apiKey: '3791e7df6ccb4e6897a218742b3e6295'
 });
 
 const particlesOptions = {
@@ -95,7 +95,7 @@ class App extends Component {
       .then(response => {
         console.log('hi', response)
         if (response) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://git.heroku.com/infinite-sands-59165.git', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

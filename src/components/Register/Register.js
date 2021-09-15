@@ -6,6 +6,7 @@ class Register extends React.Component {
     this.state = {
       email: '',
       password: '',
+      
       name: ''
     }
   }
@@ -23,7 +24,7 @@ class Register extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch('http://localhost:3000/register', {
+    fetch('https://git.heroku.com/infinite-sands-59165.git', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
